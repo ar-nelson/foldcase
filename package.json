@@ -1,7 +1,14 @@
 {
-  "name": "foldcase",
+  "name": "@ar-nelson/foldcase",
   "version": "1.0.0",
-  "description": "The Unicode Case Folding Algorithm in JavaScript",
+  "description": "Unicode Case Folding in JavaScript, both Simple and Full",
+  "keywords": [
+    "string",
+    "unicode",
+    "casefold",
+    "case-fold",
+    "case-folding"
+  ],
   "main": "index.js",
   "scripts": {
     "codegen": "curl http://www.unicode.org/Public/UNIDATA/CaseFolding.txt | awk -f generate-tables.awk | prettier --parser=babel > case-tables.js",

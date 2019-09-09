@@ -1,10 +1,10 @@
 # foldcase: JavaScript implementation of the Unicode Case Folding Algorithm
 
 This is a small Node module that implements the [Unicode Case Folding
-Algorithm][1] by generating a conversion table from the [official case folding
-table from `unicode.org`][2].
+Algorithm][1], in both Simple and Full variants, by generating a conversion
+table from the [official case folding table at `unicode.org`][2].
 
-    const foldcase = require('foldcase');
+    const foldcase = require('@ar-nelson/foldcase');
     
     foldcase('ABC123'); // => 'abc123'
 
