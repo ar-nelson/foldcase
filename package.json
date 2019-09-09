@@ -1,0 +1,28 @@
+{
+  "name": "foldcase",
+  "version": "1.0.0",
+  "description": "The Unicode Case Folding Algorithm in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "codegen": "curl http://www.unicode.org/Public/UNIDATA/CaseFolding.txt | awk -f generate-tables.awk | prettier --parser=babel > case-tables.js",
+    "lint": "eslint *.js",
+    "test": "npm run lint && mocha tests.js"
+  },
+  "author": "Adam R. Nelson <adam@nels.onl>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "mocha": "^6.2.0",
+    "prettier": "^1.18.2"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
+}
