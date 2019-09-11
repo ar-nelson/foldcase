@@ -1,7 +1,7 @@
 {
   "name": "@ar-nelson/foldcase",
-  "version": "1.0.0",
-  "description": "Unicode Case Folding in JavaScript, both Simple and Full",
+  "version": "1.0.1",
+  "description": "Unicode Case Folding, both Simple and Full",
   "keywords": [
     "string",
     "unicode",
@@ -16,6 +16,7 @@
     "test": "npm run lint && mocha tests.js"
   },
   "author": "Adam R. Nelson <adam@nels.onl>",
+  "repository": "https://github.com/ar-nelson/foldcase",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.3.0",
